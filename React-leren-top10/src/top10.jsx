@@ -1,5 +1,7 @@
-export function listItem(){
+import styles from "./list.module.css";
+
+export function Top10(props){
     return(
-        <li className="listItem"></li>
+        <li className={styles.list}>{props.title}</li>
     )
 }
