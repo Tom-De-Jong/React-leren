@@ -1,0 +1,45 @@
+#root{
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-height: 100vh;
+  font-family: "Google Sans", sans-serif;
+}
+
+.section{
+width: 80%;
+height: 80vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border: solid #68686842 2px;
+border-radius: 30px;
+padding-left: 25px;
+padding-right: 25px;
+}
+
+.textSection{
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.header{
+font-size: 3.5vw;
+}
+
+.paragraph{
+font-size: 20px;
+}
+
+.list{
+  color: white;
+  display: flex;
+  flex-direction: column;
+ text-align: center;
+  margin-top: 25px;
+  font-size: 2vw;
+}
