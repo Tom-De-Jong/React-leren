@@ -17,23 +17,28 @@ function App() {
     { title: "Succesvolle deploy op vrijdag", desc: "Zonder dat alles crasht" }
   ]
 
-  let list = [];
+  // let list = [];
 
-  for (let i = 0; i < top10.length; i++) {
-    const element = top10[i];
-    list.push(
+  // for (let i = 0; i < top10.length; i++) {
+  //   const element = top10[i];
+  //   list.push(
 
-      <Top10 title={top10[i].title} desc={top10[i].desc} />
+  //     <Top10 title={top10[i].title} desc={top10[i].desc} />
 
-    )
-  }
+  //   )
+  // }
+
+  let list = top10.map((item, index) =>{
+    return <Top10 title={top10[index].title} desc={top10[index].desc} />
+})
+
 
   return (
     <>
 
 
       <section className="section">
-        <h2>Top 10 dingen</h2>
+        <h2>Top 10 dingen met ai testdata</h2>
 
         <ol>
           
